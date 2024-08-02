@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MdAddBox } from "react-icons/md";
 
 function AddTodo({ onNewItem }) {
   const [todoName, setTodoName] = useState("");
@@ -35,7 +36,7 @@ function AddTodo({ onNewItem }) {
             className="btn btn-success kg-button"
             onClick={handleAddButtonClicked}
           >
-            Add
+            <MdAddBox />
           </button>
         </div>
       </div>
